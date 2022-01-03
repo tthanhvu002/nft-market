@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="logo-wrap">
+                <img src="./asset/img/Logo_white.svg" alt="logo">
+            </div>
+            <div class="header__menu">
+                <ul>
+                    <li class="has-popup header__menu-item" href= "index.html">
+                        <a href="./index.html">Home</a>
+                        <span class="more">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </span>
+                        <ul class="popup ">
+                            <li>
+                                <i class="fas fa-home"></i>
+                                Homepage 1</li>
+                            <li>
+                                <i class="fas fa-home"></i>
+                                Homepage 2</li>
+                            <li>
+                                <i class="fas fa-home"></i>
+                                Homepage 3</li>
+                            <li>
+                                <i class="fas fa-home"></i>
+                                Homepage 4</li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item" href= "marketplace.html"><a href="./marketplace.html">Marketplace</a></li>
+                    <li class="header__menu-item">Collection</li>
+                    <li class="header__menu-item">Profile</li>
+                    <li class="header__menu-item">Creators</li>
+                    <li class="header__menu-item">UI Kit</li>
+                    <li class="has-popup header__menu-item">
+                        Page 
+                        <span class="more">
+                            <i class="fas fa-ellipsis-v"></i>
+
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-wrap">
+                <div class="search-logo__wrap">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="wallet-connect-btn">
+                <div class="wallet__icon">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <span>Connect wallet</span>
+            </div>
+            <div class="wallet-logo">
+                <img src="./asset/img/metamask.svg" alt="walletlogo" width="45">
+            </div>
+            
+            <div class="header__mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="header__mobile-menu">
+                <ul class="mobile-menu">
+                    <li class="have-child">
+                        <span>Home</span>
+                        <i class="fas fa-chevron-down mobile-menu__icon"></i>
+                        <div class="mobile-overflow">
+                            <ul class="submenu">
+                                <li>Home 1</li>
+                                <li>Home 2</li>
+                                <li>Home 3</li>
+                                <li>Home 4</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>Marketplace</li>
+                    <li>Collection</li>
+                    <li>Profile</li>
+                    <li>Creator</li>
+                    <li>UI Kit</li>
+                </ul>
+            </div>
+        </header>
+        <div class="container mkp">
+            <h1 class="container__heading">NFT Marketplace</h1>
+            <ul class="container__categories">
+                <li>All</li>
+                <li>
+                    <i class="fas fa-gamepad"></i>
+                    Games</li>
+                <li>
+                    <i class="fas fa-paint-brush"></i>
+                    Art</li>
+                <li>
+                    <i class="fas fa-chart-line"></i>
+                    Trading Card</li>
+                <li>
+                    <i class="fas fa-compact-disc"></i>
+                    Music</li>
+                <li>
+                    <i class="fas fa-globe-europe"></i>
+                    Domain Name</li>
+                <li>
+                    <i class="far fa-grin-squint"></i>
+                    Memes</li>
+                <li>
+                    <i class="fas fa-th"></i>
+                    Collectibles</li>
+            </ul>
+            <div class="grid wide">
+                <div class="nft-wrap">
+                    <h2 class="nft-wrap__heading">
+                        Artworks
+                    </h2>
+                    <div class="filter-wrap">
+                        <div>
+                            <h2>FILTER BY: </h2>
+                            <ul>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox" class="switch-input">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <p>Has List Price</p>
+                                </li>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox" class="switch-input">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <p>Has Open Offer</p>
+                                </li>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox" class="switch-input">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <p>Owned By Creator</p>
+                                </li>
+                                <li>
+                                    <label class="switch">
+                                        <input type="checkbox" class="switch-input">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <p>Has Sold</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Sort By:</h2>
+                            <select name="" id="">
+                                <option value="" selected>Recent Active</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="nft-list">
+                        <div class="row">
+                            <div class="col l-3 m-12 c-12">
+                                <div class="nft-item">
+                                    <div class="nft-item__likes">
+                                        <i class="fas fa-heart"></i>
+                                        <span>13.2K</span>
+                                    </div>
+                                    <div class="nft-item__avt">
+                                        <img src="./asset/img/avatar_1.png" alt="logo">
+                                        <span>@mikenhily</span>
+                                    </div>
+                                    <img src="./asset/img/item_1.png" alt="" class="nft-item__img">
+                                    <h2 class="nft-item__heading">
+                                        Colorful Abstract Painting
+                                    </h2>
+                                    <div class="nft-item__info">
+                                        <p>4 in stock</p>
+                                        <p>Price: <span style="color: #34ad7a;">2.45ETH</span></p>
+                                    </div>
+                                    <div class="line" style="margin: 15px 0;"></div>
+                                    <div class="nft-item__submit">
+                                        <div style="display: flex; align-items: center;">
+                                            <i class="fas fa-history"></i>
+                                            <p>View History</p>
+                                        </div>
+                                        <div class="blue box__item-status" style="font-size: 1.6rem;">Place Bid</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="nft-item">
+                                    <div class="nft-item__likes">
+                                        <i class="fas fa-heart"></i>
+                                        <span>13.2K</span>
+                                    </div>
+                                    <div class="nft-item__avt">
+                                        <img src="./asset/img/avatar_2.png" alt="logo">
+                                        <span>@mazanov_sky</span>
+                                    </div>
+                                    <img src="./asset/img/item_2.png" alt="" class="nft-item__img">
+                                    <h2 class="nft-item__heading">
+                                        The girl with the firefly
+                                    </h2>
+                                    <div class="nft-item__info">
+                                        <p>12 in stock</p>
+                                        <p>Price: <span style="color: #34ad7a;">2.45ETH</span></p>
+                                    </div>
+                                    <div class="line" style="margin: 15px 0;"></div>
+                                    <div class="nft-item__submit">
+                                        <div style="display: flex; align-items: center;">
+                                            <i class="fas fa-history"></i>
+                                            <p>View History</p>
+                                        </div>
+                                        <div class="blue box__item-status" style="font-size: 1.6rem;">Place Bid</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="nft-item">
+                                    <div class="nft-item__likes">
+                                        <i class="fas fa-heart"></i>
+                                        <span>13.2K</span>
+                                    </div>
+                                    <div class="nft-item__avt">
+                                        <img src="./asset/img/avatar_3.png" alt="logo">
+                                        <span>@jimmy_dom
+
+                                        </span>
+                                    </div>
+                                    <img src="./asset/img/item_3.png" alt="" class="nft-item__img">
+                                    <h2 class="nft-item__heading">
+                                        Dodo hide the seek
+                                    </h2>
+                                    <div class="nft-item__info">
+                                        <p>4 in stock</p>
+                                        <p>Price: <span style="color: #34ad7a;">2.45ETH</span></p>
+                                    </div>
+                                    <div class="line" style="margin: 15px 0;"></div>
+                                    <div class="nft-item__submit">
+                                        <div style="display: flex; align-items: center;">
+                                            <i class="fas fa-history"></i>
+                                            <p>View History</p>
+                                        </div>
+                                        <div class="blue box__item-status" style="font-size: 1.6rem;">Place Bid</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="nft-item">
+                                    <div class="nft-item__likes">
+                                        <i class="fas fa-heart"></i>
+                                        <span>13.2K</span>
+                                    </div>
+                                    <div class="nft-item__avt">
+                                        <img src="./asset/img/avatar_1.png" alt="logo">
+                                        <span>
+                                            @Alvin_nov</span>
+                                    </div>
+                                    <img src="./asset/img/item_4.png" alt="" class="nft-item__img">
+                                    <h2 class="nft-item__heading">
+                                        Liquid Forest Princess
+                                    </h2>
+                                    <div class="nft-item__info">
+                                        <p>6 in stock</p>
+                                        <p>Price: <span style="color: #34ad7a;">2.45ETH</span></p>
+                                    </div>
+                                    <div class="line" style="margin: 15px 0;"></div>
+                                    <div class="nft-item__submit">
+                                        <div style="display: flex; align-items: center;">
+                                            <i class="fas fa-history"></i>
+                                            <p>View History</p>
+                                        </div>
+                                        <div class="blue box__item-status" style="font-size: 1.6rem;">Place Bid</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="nft-item">
+                                    <div class="nft-item__likes">
+                                        <i class="fas fa-heart"></i>
+                                        <span>13.2K</span>
+                                    </div>
+                                    <div class="nft-item__avt">
+                                        <img src="./asset/img/avatar_5png.png" alt="logo">
+                                        <span>@stivan_rominok</span>
+                                    </div>
+                                    <img src="./asset/img/item_5.png" alt="" class="nft-item__img">
+                                    <h2 class="nft-item__heading">
+                                        Spider Eyes Modern Art
+                                    </h2>
+                                    <div class="nft-item__info">
+                                        <>4 in stock</  p>
+                                        <p>Price: <span style="color: #34ad7a;">2.45ETH</span></p>
+                                    </div>
+                                    <div class="line" style="margin: 15px 0;"></div>
+                                    <div class="nft-item__submit">
+                                        <div style="display: flex; align-items: center;">
+                                            <i class="fas fa-history"></i>
+                                            <p>View History</p>
+                                        </div>
+                                        <div class="blue box__item-status" style="font-size: 1.6rem;">Place Bid</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="nft-item">
+                                    <div class="nft-item__likes">
+                                        <i class="fas fa-heart"></i>
+                                        <span>13.2K</span>
+                                    </div>
+                                    <div class="nft-item__avt">
+                                        <img src="./asset/img/avatar_6.png" alt="logo">
+                                        <span>@mazanov_sky
+
+                                        </span>
+                                    </div>
+                                    <img src="./asset/img/item_6.png" alt="" class="nft-item__img">
+                                    <h2 class="nft-item__heading">
+                                        Synthwave Painting
+                                    </h2>
+                                    <div class="nft-item__info">
+                                        <p>4 in stock</p>
+                                        <p>Price: <span style="color: #34ad7a;">2.45ETH</span></p>
+                                    </div>
+                                    <div class="line" style="margin: 15px 0;"></div>
+                                    <div class="nft-item__submit">
+                                        <div style="display: flex; align-items: center;">
+                                            <i class="fas fa-history"></i>
+                                            <p>View History</p>
+                                        </div>
+                                        <div class="blue box__item-status" style="font-size: 1.6rem;">Place Bid</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="nft-item">
+                                    <div class="nft-item__likes">
+                                        <i class="fas fa-heart"></i>
+                                        <span>13.2K</span>
+                                    </div>
+                                    <div class="nft-item__avt">
+                                        <img src="./asset/img/avatar_7.png" alt="logo">
+                                        <span>@jimmy_domy</span>
+                                    </div>
+                                    <img src="./asset/img/item_7.png" alt="" class="nft-item__img">
+                                    <h2 class="nft-item__heading">
+                                        Contemporary Abstract
+                                    </h2>
+                                    <div class="nft-item__info">
+                                        <p>4 in stock</p>
+                                        <p>Price: <span style="color: #34ad7a;">2.45ETH</span></p>
+                                    </div>
+                                    <div class="line" style="margin: 15px 0;"></div>
+                                    <div class="nft-item__submit">
+                                        <div style="display: flex; align-items: center;">
+                                            <i class="fas fa-history"></i>
+                                            <p>View History</p>
+                                        </div>
+                                        <div class="blue box__item-status" style="font-size: 1.6rem;">Place Bid</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="nft-item">
+                                    <div class="nft-item__likes">
+                                        <i class="fas fa-heart"></i>
+                                        <span>13.2K</span>
+                                    </div>
+                                    <div class="nft-item__avt">
+                                        <img src="./asset/img/avatar_8.png" alt="logo">
+                                        <span>
+                                            @Alvin_nov</span>
+                                    </div>
+                                    <img src="./asset/img/item_8.png" alt="" class="nft-item__img">
+                                    <h2 class="nft-item__heading">
+                                        Valkyrie Abstract Art
+                                    </h2>
+                                    <div class="nft-item__info">
+                                        <p>12 in stock</p>
+                                        <p>Price: <span style="color: #34ad7a;">2.45ETH</span></p>
+                                    </div>
+                                    <div class="line" style="margin: 15px 0;"></div>
+                                    <div class="nft-item__submit">
+                                        <div style="display: flex; align-items: center;">
+                                            <i class="fas fa-history"></i>
+                                            <p>View History</p>
+                                        </div>
+                                        <div class="blue box__item-status" style="font-size: 1.6rem;">Place Bid</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="row" style="margin-top: 30px;">
+                            <div class="col l-4 m-12 c-12">
+                                <div class="nft-item">
+                                    <div class="row top-imgs">
+                                        <div class="col l-4 m-4 c-4">
+                                           <img src="./asset/img/item_9.png" alt=""> 
+                                        </div>
+                                        <div class="col l-4 m-4 c-4">
+                                           <img src="./asset/img/item_10.png" alt=""> 
+
+                                        </div>
+                                        <div class="col l-4 m-4 c-4">
+                                           <img src="./asset/img/item_11.png" alt=""> 
+
+                                        </div>
+                                    </div>
+                                    <img src="./asset/img/item_12.png" alt="" class="nft-item__img">
+                                </div>
+                                <div class="nft-info">
+                                    <h2>
+                                        Creative Art collection
+                                    </h2>
+                                    <div class="nft-item__likes">
+                                        <i class="fas fa-heart"></i>
+                                        <span>13.2K</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-12 c-12">
+                                <div class="nft-item">
+                                    <div class="row top-imgs">
+                                        <div class="col l-4 m-4 c-4">
+                                           <img src="./asset/img/item_13.png" alt=""> 
+                                        </div>
+                                        <div class="col l-4 m-4 c-4">
+                                           <img src="./asset/img/item_14.png" alt=""> 
+
+                                        </div>
+                                        <div class="col l-4 m-4 c-4">
+                                           <img src="./asset/img/item_15.png" alt=""> 
+
+                                        </div>
+                                    </div>
+                                    <img src="./asset/img/item_20.png" alt="" class="nft-item__img">
+                                </div>
+                                <div class="nft-info">
+                                    <h2>
+                                        Colorful Abstract Painting
+                                    </h2>
+                                    <div class="nft-item__likes">
+                                        <i class="fas fa-heart"></i>
+                                        <span>5.8K</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-12 c-12">
+                                <div class="nft-item">
+                                    <div class="row top-imgs">
+                                        <div class="col l-4 m-4 c-4 ">
+                                           <img src="./asset/img/item_16.png" alt=""> 
+                                        </div>
+                                        <div class="col l-4 m-4 c-4">
+                                           <img src="./asset/img/item_17.png" alt=""> 
+
+                                        </div>
+                                        <div class="col l-4 m-4 c-4">
+                                           <img src="./asset/img/item_18.png" alt=""> 
+
+                                        </div>
+                                    </div>
+                                    <img src="./asset/img/item_19.png" alt="" class="nft-item__img">
+                                </div>
+                                <div class="nft-info">
+                                    <h2>
+                                        Creative Art collection
+                                    </h2>
+                                    <div class="nft-item__likes">
+                                        <i class="fas fa-heart"></i>
+                                        <span>13.2K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./markerplace.js"></script>
+</body>
+</html>
